@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thumbnail</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 80px;
+            font: 70% Arial, Helvetica, sans-serif;
+            color: #555;
+        }
+
+        h2 {
+            font-size: 180%;
+            font-weight: normal;
+        }
+
+        img {
+            border: none;
+        }
+
+        div#thumbs a {
+            display: block;
+            float: left;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #999;
+            padding: 2px;
+        }
+
+        div#thumbs a img {
+            position: absolute;
+            top: 5px;
+            left: 3px;
+        }
+
+        /* mouse over */
+        div#thumbs a:hover {
+            overflow: visible;
+        }
+
+        div#thumbs a:hover img {
+            border: 1px solid #999;
+            background: #fff;
+            padding: 2px;
+        }
+
+        /* // mouse over */
+        /* clearing floats */
+        div#thumbs:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Thumbnail demo</h2>
+    <hr>
+    <br><br>
+
+    <div id="thumbs">
+        <a href="../images/flower2big.jpg" target="_blank">
+            <img src="../images/flower2.png" />
+        </a>
+    </div>
+    <br><br>
+    <p>
+        <img src="../images/flower2.png" />
+    </p>
+</body>
+
+</html>

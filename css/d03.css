@@ -1,0 +1,68 @@
+/* day la file css cho cac bai tap cua thu muc d03 */
+
+/* universal selector */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* type selector */
+a{
+    text-decoration: none;
+}
+
+h2{
+    color: red;
+}
+
+/* class selector, co ten bat dau bang dau . */
+.autumm{
+    font-style: italic;
+    width: 50%;
+
+    border: double medium brown;
+    margin-top: 10px;
+    padding: 2rem;
+
+    background-image: url("../images/bg\ trung\ thu.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+
+/* pseudo class ::first-letter, ap dung cho 1 ky tu dau tien cua the p co class = title */
+p.title::first-letter{
+    font-size: 200%;
+}
+
+/* pseudo class ::first-line, ap dung cho 1 dong dau tien cua the p co class = title */
+p.title::first-line{
+    font-style: normal;
+    font-weight: bold;
+}
+
+p{
+    text-indent: 2rem;
+}
+
+
+/* id selector, co ten bat dau bang dau # */
+#menu{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: royalblue;
+}
+
+/* pseudo class ::hover */
+a:hover{
+    background-color:midnightblue;
+    color: lightyellow;
+}
+
+
+div>img{
+    border: peachpuff groove medium;
+    border-radius: 50%;
+    width: 40%;
+}
